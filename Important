@@ -1,0 +1,15 @@
+(1) To get the sum of all the subset of a array
+Let array be a1,a2,a2.....an
+and you want to find sum of all the subset 
+Solution 1:
+Generate all the subset and find the sum
+Complexity:O(2^n)
+
+Solution 2:
+Well If you remember in Combinatorics and Binomial Theorem:
+(1+a1)*(1+a2)*(1+a3)(1+a4)....(1+an)
+gives 1+sum(all the subset of array)
+So just calculate above and subtract it by 1
+Complexity:O(n)
+
+#############################################################################################################################
