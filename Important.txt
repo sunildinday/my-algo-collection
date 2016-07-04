@@ -13,3 +13,16 @@ So just calculate above and subtract it by 1
 Complexity:O(n)
 
 #############################################################################################################################
+(2)Given an array find if there are four numbers who sum upto x. A number in array can be used any time  can be used any time
+Solution 1:use brute force to generate a+b+c+d 
+Complexity(n^4)
+
+Solution 2:again use brute force but in sum cleaver way 
+find (a+b+c) and find if x-(a+b+c) exits in array using hash
+Complexity:O(n^3)
+
+Solution 3: now we use brute force with divide and conquer
+find all (a+b) and(c+d) and store them in hash table
+and for each (a+b) find whether x-(a+b) exists in (c+d) using hash
+Complexity:O(n^2)
+ #############################################################################################################################
