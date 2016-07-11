@@ -1,5 +1,5 @@
 # My personal interaction with Algorithms
-This repo will contain algo which are important for me And feels free to contribute 
+This repo will contain algo which are important for me and if anybody want to contribute ,then please contribute
 ##Content
 * [Subset-Sum](https://github.com/sunil-dinday/my-algo-collection/blob/master/subset-sum.cpp)
 * [Finding independent set in tree(which is NP hard problem in graph)](https://github.com/sunil-dinday/my-algo-collection/blob/master/independent-set-in-trees.cpp)
