@@ -9,3 +9,4 @@ This repo will contain algo which are important for me and if anybody want to co
 * [Solving a Wine Problem(Using Dp)](https://github.com/sunil-dinday/my-algo-collection/blob/master/dp-wine.cpp)
 * [Maximum Sub-array](https://github.com/sunil-dinday/my-algo-collection/blob/master/maximum-subarray.cpp)
 * [Coin-Change](https://github.com/sunil-dinday/my-algo-collection/blob/master/Coins-Change.cpp)
+* [Shortest Path(Bellman for)](https://github.com/sunil-dinday/my-algo-collection/blob/master/Bellman-Ford(Shortest%20Path).cpp)
