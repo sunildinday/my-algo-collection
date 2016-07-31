@@ -10,3 +10,4 @@ This repo will contain algo which are important for me and if anybody want to co
 * [Maximum Sub-array](https://github.com/sunil-dinday/my-algo-collection/blob/master/maximum-subarray.cpp)
 * [Coin-Change](https://github.com/sunil-dinday/my-algo-collection/blob/master/Coins-Change.cpp)
 * [Shortest Path(Bellman-ford)](https://github.com/sunil-dinday/my-algo-collection/blob/master/Bellman-Ford(Shortest%20Path).cpp)
+* [Digit DP](https://github.com/sunil-dinday/my-algo-collection/blob/master/digitdp.cpp)
