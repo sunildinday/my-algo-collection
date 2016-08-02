@@ -8,7 +8,7 @@ ans={}#a dictionary to get  key,val where key will a tuple which contains names 
 #element chatted with
 srv={}#a dictionary to get the  names of the person with whom he chatted most
 import collections
-with open('test','r') as f:#opening the test file to get all the chats
+with open('test.txt','r') as f:#opening the test file to get all the chats
     for line in f:
         first=line.find("<")
         second=line.find(">")
@@ -16,7 +16,7 @@ with open('test','r') as f:#opening the test file to get all the chats
         if first!=-1 and second !=-1:
             #nick.add(line[first+1:second])
             nick[line[first+1:second]]=True#getting all the nicknames
-with open('test','r') as f:
+with open('test.txt','r') as f:
     for line in f:#getting chats line by line
         first=line.find("<")
         second=line.find(">")
