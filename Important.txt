@@ -26,3 +26,5 @@ find all (a+b) and(c+d) and store them in hash table
 and for each (a+b) find whether x-(a+b) exists in (c+d) using hash
 Complexity:O(n^2)
  #############################################################################################################################
+ to Print cycle in an undirected graph use an array visit and mark it 0 ,1 and 2
+ example http://codeforces.com/contest/699/problem/D see the code
