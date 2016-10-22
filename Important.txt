@@ -28,3 +28,15 @@ Complexity:O(n^2)
  #############################################################################################################################
  to Print cycle in an undirected graph use an array visit and mark it 0 ,1 and 2
  example http://codeforces.com/contest/699/problem/D see the code
+#########################################################################################
+given an array a.whose all element are zero intially ..now you have given q queries
+of type l,r vl.in each query you will add vl from range l to r
+and after all queries print the array
+solution:O(q)
+let query be l,r ,vl
+then you just hv to make the array  a[l]+=vl and a[r+1]-=vl
+and after all queries just take prefix sum 
+/////////////////////////////////////////
+this method can be used in overlapped segmnet
+like you have given sum segment and you want to find the elment which is covered exactly segments time
+example http://codeforces.com/contest/731/problem/D
