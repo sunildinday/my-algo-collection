@@ -40,3 +40,13 @@ and after all queries just take prefix sum
 this method can be used in overlapped segmnet
 like you have given sum segment and you want to find the elment which is covered exactly segments time
 example http://codeforces.com/contest/731/problem/D
+
+######################################################################################################
+finding lcm of n numbers
+int lcm(int[] a, int n) {
+  int res = 1, i;
+  for (i = 0; i < n; i++) {
+    res = res*a[i]/gcd(res, a[i]);
+  }
+  return res;
+}
