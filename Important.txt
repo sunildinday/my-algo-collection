@@ -50,3 +50,6 @@ int lcm(int[] a, int n) {
   }
   return res;
 }
+###########################################################################################################
+Goldbach's conjection
+1) every even number(greater then 2) can be expressed as sum of two prime numbers
