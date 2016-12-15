@@ -53,3 +53,51 @@ int lcm(int[] a, int n) {
 ###########################################################################################################
 Goldbach's conjection
 1) every even number(greater then 2) can be expressed as sum of two prime numbers
+
+###############################################################################
+lets say you have given an array ARR[1...n] 
+now there are m queries of type
+x where x is an index in given array
+now for each query you have to print index of the first elements(both left and right side of x) which are greater then ARR[x]
+Example: 1 based index
+ARR[]={1,4,5,2,3,1,3,4,6}
+let query be
+x=5
+then answer will be 3 (left of x) and 8(right of x)
+because ARR[3]>ARR[x] and ARR[8]>ARR[x]
+Solution:
+THis question is based in stack
+Before any qyery will get answer for every index in O(n) time
+Now take two array right[1..n] and left[1..n]
+where right[i] and left[i] holds the answer for ith index
+Observations:
+lets first concentrate on only one side.let it  right side
+now we want to find index of first greater element to the right of ARR[x]
+Lets think in other way.
+instead of finding answer for every index .we will try to find for which index answer will be index i
+let say we are at index i.now lets say for index j answer is index i
+onte that if i is answer of index j then ARR[j]<ARR[i] and all the elements betwenn jth index and ith index will be smaller 
+then ARR[j](if not then for ju answer must be an inbetween index).So we will all element for which answer is not  known and pop all the elment from stack for which we know the answer
+Example:
+let ARR[]={9,4,6,10}
+i=1
+then i cant an answer of any elment . push it into stack
+STACK={1}//note we are pushing index not value
+i=2
+now since 9 is greater then 4 so 4 cant be answer of 9 so push 4
+STACK={1,2}
+i=3
+now compare 6 with 4 so for index=2 answer is 3
+and since we know the answer of 4 .hence no need to keep it.so pop it
+but 9>6 so push 6
+STACK={1,3}
+i=4
+10>6 for 3 answer is 4
+10>9 for 1 answer is 4
+so pop 1 and 3
+STACK={4}
+
+In this we can also implement left side.but from opposite side
+
+
+
