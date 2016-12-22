@@ -1,6 +1,8 @@
  /*--------------------Digit Dp using dynamic programing--------------
- here we are taking number from front ,for example 324 .then put this into a array{3,2,4}.now for the first place we can only insert number
- upto 3 and if number is smaller then 3 then for the next index we can insert any number from 0 to 9,because the number will be always smaller
+ here we are taking number from front ,for example 324 .then put this into a array{3,2,4}.now for the first place 
+ we can only insert number
+ upto 3 and if number is smaller then 3 then for the next index we can insert any number from 0 to 9,because the numbe
+ r will be always smaller
  then the 324.
  Problem Link:https://www.hackerearth.com/problem/algorithm/samu-and-special-coprime-numbers/description/
  */
@@ -54,6 +56,12 @@ ull digitdp(int idx,int tight,int sum, int sqrsum)
 	//for tight=1 we are not saving  it in dp table because if we do.then for every number which have same number of digits
 	// will have same answer.because when we call dpdigit(digit.size()-1,1,0,0)  (because dp[idx=len-1][tight=1][sum=0][sqrsum=0]!=-1) function in main function .then it will give same answer
 	// for every number having same number of digits
+	//we are doing this because we have many test cases and if we also tight answer.then it will give problem in other 
+	// testcases.
+	//for example:let say we call for 324 dpdigit(3,1,0,0) let say we calcualted the answer for it.
+	//now let say we call it for 424 for next testcase .then during intial call dp state will be digitdp(3,1,0,0)
+	//and hence will give become true (as calculated for 324).Hence we must avoid calculating answer for tight
+	//if you have to use this algo for only one test case then you can use tight
 	if(!tight)
 	dp[idx][sum][sqrsum]=ans;
 	return ans; 
@@ -89,7 +97,8 @@ int main()
 	#endif
 	int t;
 	cin>>t;
-	memset(dp,-1,sizeof(dp));//no nedd to intialise the dp table for every test casse.because for every number answer will be same
+	memset(dp,-1,sizeof(dp));//no nedd to intialise the dp table for every test casse.because for every number 
+	//answer will be same
 	while(t--)
 	{
 		
