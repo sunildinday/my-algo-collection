@@ -98,6 +98,16 @@ so pop 1 and 3
 STACK={4}
 
 In this we can also implement left side.but from opposite side
+$$####################################################################################################################
 
+OverFlow Problem:
+let say you want to do
+int a=1e9,b=1e9;
+int c;
+c=(a*b)%mod;
+then here a*b will result in overflow
+so first convert a and b to long long
+and then convert back to int
+c=(int)((ll)(a)*(ll)*(b))%mod;
 
 
