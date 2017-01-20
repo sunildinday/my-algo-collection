@@ -110,4 +110,9 @@ so first convert a and b to long long
 and then convert back to int
 c=(int)((ll)(a)*(ll)*(b))%mod;
 
+#############################################################################################
+every number can be expressed as sum of square of four number
+
+ see-https://discuss.codechef.com/questions/90269/foursq-editorial
+#################################################################################################
 
