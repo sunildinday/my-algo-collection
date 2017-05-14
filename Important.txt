@@ -115,4 +115,5 @@ every number can be expressed as sum of square of four number
 
  see-https://discuss.codechef.com/questions/90269/foursq-editorial
 #################################################################################################
-
+Wilson theorem
+If p is a prime number , then ( p - 1)! ≡ -1 (mod p ) 
