@@ -117,3 +117,10 @@ every number can be expressed as sum of square of four number
 #################################################################################################
 Wilson theorem
 If p is a prime number , then ( p - 1)! ≡ -1 (mod p ) 
+
+
+###################################################################
+
+dfs+MO
+
+http://codeforces.com/blog/entry/43230
