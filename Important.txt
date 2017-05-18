@@ -125,8 +125,31 @@ dfs+MO
 
 http://codeforces.com/blog/entry/43230
 ####################################################
-To find inverse of n number
+To find inverse of n number also applicable when m is not prime
 use the equation
 inverse[a]=((-m/a)+inverse[m%a])%m+m;
 base case inverse[1]=1;
+###################################################
+Fermat Little Theorem:when m is prime and a and m are coprime gcd(a,m)=1;
+int pow(int a,int b,int mod)
+{
+int x=1,y=a;
+while(b)
+{
+if(b%2==1)
+{
+x=x*y;
+if(x>mod)x%=mod;
+}
+y=y*y;
+if(y>mod)
+y%=mod;
+b=b/2;
+}
+return x;
+}
+int inverse(int a,int m)
+{
+ return pow(a,m-2,m);
+}
 
