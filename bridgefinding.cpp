@@ -45,7 +45,6 @@ set<pair<int,int> > bridge;
 int n,m;
 int tt=0;
 int ans=0;
-//here bridge is used to store all the bridges in the graph
 void dfs(int u,int p)
 {
 	vis[u]=1;
@@ -82,17 +81,18 @@ int dfs2(int u,int p)
 		int v=adj[u][i];
 		if(!vis[v])
 		{
-			d2=dfs2(v,u);
+		d2=max(d2,dfs2(v,u)+(bridge.find(make_pair(min(v,u),max(v,u)))!=bridge.end()?1:0));
+		
+			
 			if(d2>d1)
-				swap(d1,d2);
-
-			if(bridge.find(make_pair(min(v,u),max(v,u)))!=bridge.end());
-			d1++;
-
-		}
-		ans=max(ans,d1+d2);
-		return d1;
+			swap(d1,d2);
+		}	
 	}
+	//cout<<u<<" "<<" "<<p<<" ";
+	//cout<<d1<<" "<<d2<<endl;
+	ans=max(ans,d1+d2);
+
+		return d1;
 
 }
 int main()
@@ -116,6 +116,7 @@ dfs(1,0);
 vis.resize(0);
 vis.resize(n+1,0);
 dfs2(1,0);
+
 cout<<bridge.size()-ans;
     return 0;
 
