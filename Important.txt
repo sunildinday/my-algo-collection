@@ -152,4 +152,6 @@ int inverse(int a,int m)
 {
  return pow(a,m-2,m);
 }
-
+####################################################################################################
+to find whether an array contain a sum with  m elment or not 
+https://www.interviewbit.com/problems/equal-average-partition/
